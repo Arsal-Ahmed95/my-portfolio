@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>Arsal Ahmed — Portfolio</title>
+		<style>
+			:root{--bg:#f7f9fc;--card:#ffffff;--accent:#2563eb;--muted:#6b7280}
+			html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:#0f172a}
+			.container{max-width:1000px;margin:0 auto;padding:24px}
+			header{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+			.site-title{font-weight:700;font-size:1.25rem}
+			nav ul{display:flex;gap:12px;list-style:none;padding:0;margin:0}
+			nav a{color:var(--muted);text-decoration:none;font-weight:600}
+			nav a:hover{color:var(--accent)}
+			.hero{background:linear-gradient(90deg, rgba(37,99,235,0.08), rgba(37,99,235,0.02));padding:40px;border-radius:12px;margin:18px 0}
+			.hero h1{margin:0 0 8px;font-size:2rem}
+			.hero p{margin:0;color:var(--muted)}
+			section{background:var(--card);padding:20px;border-radius:10px;margin:14px 0;box-shadow:0 1px 2px rgba(2,6,23,0.04)}
+			.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+			.skill{padding:12px;border-radius:8px;background:#fbfdff;border:1px solid rgba(15,23,42,0.03)}
+			.skill h4{margin:0 0 6px;font-size:1rem}
+			footer{color:var(--muted);font-size:0.9rem;padding:18px 0;text-align:center}
+			@media (max-width:520px){.hero h1{font-size:1.5rem}}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<div class="site-title">Arsal Ahmed</div>
+				<nav aria-label="Main navigation">
+					<ul>
+						<li><a href="#home">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#skills">Skills</a></li>
+						<li><a href="#resume">Resume</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<main>
+				<section id="home" class="hero" aria-labelledby="hero-heading">
+					  <h1 id="hero-heading">Welcome — nice to meet you!</h1>
+					  <p>I'm a data scientist passionate about turning data into actionable insights. This is a small portfolio starter you can customize.</p>
+					  <p style="margin-top:12px"><a class="cta" href="#resume">View Resume</a></p>
+				</section>
+
+				<section id="about" aria-labelledby="about-heading">
+					<h2 id="about-heading">About Me</h2>
+					<p>Write a short bio here — your background, interests, and what you're currently working on. Keep it concise and personal.</p>
+				</section>
+
+				<section id="skills" aria-labelledby="skills-heading">
+					<h2 id="skills-heading">Skills</h2>
+					<div class="grid">
+						<div class="skill"><h4>Python</h4><div>Data manipulation, scripting, and automation.</div></div>
+						<div class="skill"><h4>Pandas & NumPy</h4><div>Data wrangling and numerical computing.</div></div>
+						<div class="skill"><h4>Machine Learning</h4><div>Supervised & unsupervised models, model evaluation.</div></div>
+						<div class="skill"><h4>Deep Learning</h4><div>Neural networks with TensorFlow / PyTorch.</div></div>
+						<div class="skill"><h4>SQL</h4><div>Data extraction, joins, window functions.</div></div>
+						<div class="skill"><h4>Data Visualization</h4><div>Matplotlib, Seaborn, Plotly, and dashboarding.</div></div>
+						<div class="skill"><h4>Statistics</h4><div>Probability, hypothesis testing, experimental design.</div></div>
+						<div class="skill"><h4>scikit-learn</h4><div>Model pipelines, preprocessing, feature selection.</div></div>
+					</div>
+				</section>
+				<section id="resume" aria-labelledby="resume-heading">
+					<h2 id="resume-heading">Resume</h2>
+					<p>You can preview or download the resume below. If the PDF doesn't preview in your browser, use the download link.</p>
+					<div style="margin-top:12px">
+						<!-- Local file preview: adjust path if your resume file is in a different location -->
+						<iframe src="file:///c:/Users/User/Documents/Employment/Arsal_Resume_Current_%20.pdf" width="100%" height="600" style="border:1px solid rgba(2,6,23,0.06);border-radius:8px"></iframe>
+						<p style="margin-top:8px">Download: <a href="file:///c:/Users/User/Documents/Employment/Arsal_Resume_Current_%20.pdf" download>Arsal_Ahmed_Resume.pdf</a></p>
+					</div>
+				</section>
+
+			</main>
+
+			<footer>
+				<div>Built with a simple HTML starter — customize as you like.</div>
+			</footer>
+		</div>
+	</body>
+</html>
+
